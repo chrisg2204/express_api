@@ -1,0 +1,7 @@
+{
+  "name": "bikeWebService",
+  "version": "1.0.0",
+  "description": "REST api for web-services",
+  "title": "Bike - Api docs",
+  "url": "http://127.0.0.1:5000"
+}

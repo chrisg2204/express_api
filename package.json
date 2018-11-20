@@ -1,0 +1,28 @@
+{
+  "name": "bike-api",
+  "version": "1.0.0",
+  "description": "REST api for bike web-services",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build-docs": "grunt"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "chalk": "^2.3.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "joi": "^14.0.6",
+    "loglevel": "^1.4.1",
+    "moment": "^2.17.1",
+    "mysql": "^2.15.0",
+    "sequelize": "^3.24.5"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-apidoc": "^0.11.0",
+    "grunt-contrib-yuidoc": "^1.0.0"
+  },
+  "author": "chrisg2204",
+  "license": "MIT"
+}
