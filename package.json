@@ -1,27 +1,30 @@
 {
-  "name": "bike-api",
-  "version": "1.0.0",
-  "description": "REST api for bike web-services",
+  "name": "express_api",
+  "version": "0.0.9",
+  "description": "Express REST API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "build-docs": "grunt"
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "chalk": "^2.3.2",
-    "cors": "^2.8.1",
-    "express": "^4.14.0",
-    "joi": "^14.0.6",
-    "loglevel": "^1.4.1",
-    "moment": "^2.17.1",
-    "mysql": "^2.15.0",
-    "sequelize": "^3.24.5"
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "loglevel": "^1.6.6",
+    "moment": "^2.24.0",
+    "pg": "^7.17.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.3"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.4",
     "grunt-apidoc": "^0.11.0",
-    "grunt-contrib-yuidoc": "^1.0.0"
+    "grunt-contrib-yuidoc": "^1.0.0",
+    "nodemon": "^2.0.2"
   },
   "author": "chrisg2204",
   "license": "MIT"

@@ -23,11 +23,11 @@ module.exports = {
      * @type Object
      */
     DATABASE_CONFIG: {
-        HOST: '127.0.0.1',
-        NAME: 'bike',
-        USERNAME: 'root',
-        PASSWORD: 'casa1234',
-        DB_TYPE: 'mysql',
+        HOST: '172.17.0.2',
+        NAME: 'node',
+        USERNAME: 'postgres',
+        PASSWORD: 'postgres',
+        DB_TYPE: 'postgres',
         POOL: {
             max: 5,
             min: 0,

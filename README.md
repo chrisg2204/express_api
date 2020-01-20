@@ -1,6 +1,6 @@
 DESCRIPCIÓN
 ========
-Webservice utilizado para bikesApp.
+Webservice utilizado para consumir servicios en node (ExpressJs - Sequelize).
 
 En los siguientes links se encuentra la documentación de servicios y clases.
 

@@ -8,7 +8,7 @@ const path = require("path");
 
 module.exports = {
     /**
-     * Varibale que contiene la ruta base de la aplicacion.
+     * Variable que contiene la ruta base de la aplicacion.
      *
      * @var APP_BASE
      * @type String

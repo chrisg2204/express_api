@@ -1,6 +1,6 @@
 'use strict';
 
-let appConfig = require('./config/app');
+let config = require('./config/app');
 let log = require('loglevel');
 var bodyParser = require('body-parser');
 var cors = require('cors');
@@ -14,7 +14,7 @@ var app = express();
  */
 function loadMiddDefault() {
     let midd = require('./middlewares'),
-        loadMidd = appConfig.MIDDLEWARES_AUTOLOAD,
+        loadMidd = config.MIDDLEWARES_AUTOLOAD,
         len = loadMidd.length;
     if (len > 0) {
         for (var i = 0; i < len; i++) {
@@ -28,7 +28,7 @@ function loadMiddDefault() {
  * @method initService
  */
 function initService() {
-    log.setLevel(appConfig.LOG_LEVEL);
+    log.setLevel(config.LOG_LEVEL);
     app.use(cors({
         origin: '*'
     }));
@@ -43,11 +43,11 @@ function initService() {
     if (process.env.NODE_ENV == 'test') {
         log.setLevel('error');
 
-        app.listen(appConfig.TEST_API_PORT, '0.0.0.0');
-        log.info('App listening on port: ' + appConfig.API_PORT);
+        app.listen(config.TEST_API_PORT, '0.0.0.0');
+        log.info('App listening on port: ' + config.API_PORT);
     } else {
-        app.listen(appConfig.API_PORT, '0.0.0.0');
-        log.info('App listening on port: ' + appConfig.API_PORT);
+        app.listen(config.API_PORT, '0.0.0.0');
+        log.info('App listening on port: ' + config.API_PORT);
     }
 }
 
